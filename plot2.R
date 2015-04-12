@@ -1,4 +1,4 @@
-dfOutcome<-read.table("F://Dropbox/private/working/data science/exploratory data analysis/prj1/household_power_consumption.txt", header=TRUE, sep=";")
+dfPower<-read.table("F://Dropbox/private/working/data science/exploratory data analysis/prj1/household_power_consumption.txt", header=TRUE, sep=";", colClasses=c("character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric"), na.strings="?")
 
 
 dfOutcome$test<-paste(data$Date, data$Time , sep=" ")
